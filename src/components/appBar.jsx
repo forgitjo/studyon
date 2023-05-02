@@ -17,8 +17,9 @@ import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container } from '@mui/material';
 
+
 const drawerWidth = 240;
-const navItems = ['Home', 'All Courses', 'Contact', 'Sign Up'];
+const navItems = ['Home', 'All Courses', '/contact', 'Sign Up'];
 
 const LinkButton = (props) => {
   const navigate = useNavigate();
@@ -83,10 +84,10 @@ function DrawerAppBar(props) {
               }}
             >
               <LinkButton to='/'>Home</LinkButton>
-              <LinkButton to='courses' color='inherit'>
+              <LinkButton to='/allcourses' color='inherit'>
                 All courses
               </LinkButton>
-              <LinkButton to='Contact' color='inherit'>
+              <LinkButton to='/contact' color='inherit'>
                 Contact
               </LinkButton>
               <LinkButton variant='outlined' to='/signup' color='primary'>

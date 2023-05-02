@@ -8,6 +8,8 @@ import SignUp from './components/signup';
 import ResponsiveAppBar from './components/appBar';
 import Course from './components/course/about_course';
 import theme from './components/theme';
+import Form from './components/Form';
+import Allcourses from './components/Allcourses';
 
 function App() {
     return (
@@ -16,9 +18,11 @@ function App() {
             <ResponsiveAppBar />
             <Routes>
                 <Route path='/' element={<Home />}></Route>
-                <Route path='course' element={<Course />}></Route>
-                <Route path='signin' element={<SignIn />}></Route>
-                <Route path='signup' element={<SignUp />}></Route>
+                <Route path='/course' element={<Course />}></Route>
+                <Route path='/contact' element={<Form/>}></Route>
+                <Route path='/allcourses' element={<Allcourses/>}></Route>
+                <Route path='/signin' element={<SignIn />}></Route>
+                <Route path='/signup' element={<SignUp />}></Route>
             </Routes>
         </ThemeProvider>
     );
